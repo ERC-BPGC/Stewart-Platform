@@ -1,6 +1,6 @@
 # How to get roll and pitch values from the joystick
 
-Note: These instructions are specific to linux, and might need to be modified for different platforms. You might need to install numpy as np, pyserial, asyncio, websockets and json python packages for the code to work.
+Note: These instructions are specific to linux, and might need to be modified for different platforms. You might need to install numpy, pyserial, asyncio, websockets and json python packages for the code to work.
 
 ## Connecting the ESP32 Hardware
 
@@ -33,9 +33,20 @@ gamma_P = 0.3681  # Platform offset angle
 ```
 according to Yeok-C's inverse kinematics requirements.
 
+## Creating a virtual Environment and installing required modules
+
+Open a terminal and ```cd``` into the folder ```Maze```.
+
+Then run these commands in the terminal:
+```bash:
+python3 -m venv venv
+source venv/bin/activate
+pip install numpy pyserial asyncio websockets
+```
+
 ## Launching the website and running the code.
 
-Open two terminals and ```cd``` into the folder ```web_joystick``` in both of them.
+Open two terminals and ```cd``` into the folder ```Maze``` in both of them.
 
 In one terminal run:
 ```bash:
@@ -43,6 +54,7 @@ python3 -m http.server 8000
 ```
 And in the other, run:
 ```bash:
+source venv/bin/activate
 python3 Maze_Code.py
 ```
 Now, open the website ```http://<ip-address-of-server-device>:8000/joystick.html``` on your phone.
