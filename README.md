@@ -3,7 +3,7 @@ This is a repository of all the code and files used to build a Stewart Platform 
 
 It was built in a very small timeframe so the code can be amateurish.
 
-We took the help of [YeokTatt Cheah](https://github.com/Yeok-c)'s [Stewart Platform Motion Simulation](https://github.com/Yeok-c/Stewart_Platform_Motion_Simulator) repository, and it's inverse kinematics is explained [here](https://github.com/Yeok-c/Stewart_Py).
+We took the help of [YeokTatt Cheah](https://github.com/Yeok-c)'s [Stewart Platform Motion Simulation](https://github.com/Yeok-c/Stewart_Platform_Motion_Simulator) repository, and its inverse kinematics is explained [here](https://github.com/Yeok-c/Stewart_Py).
 
 # Our team
 
